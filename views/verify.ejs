@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="vi" class="light-style " dir="ltr" data-theme="theme-default" data-assets-path="/static/assets/"
+    data-template="vertical-menu-template">
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Tra cứu sản phẩm | DoubleCheck</title>
+
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon"
+        href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="/static/assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="/static/assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="/static/assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="/static/assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="/static/assets/vendor/css/rtl/theme-default.css"
+        class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="/static/assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="/static/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="/static/assets/vendor/libs/typeahead-js/typeahead.css" />
+
+    <link rel="stylesheet" href="/static/assets/vendor/libs/animate-on-scroll/animate-on-scroll.css" />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="/static/assets/css/page-verify.css">
+
+
+    <!-- Helpers -->
+    <script src="/static/assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="/static/assets/vendor/js/template-customizer.js"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="/static/assets/js/config.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <!-- Content -->
+
+
+    <div class="container-xxl flex-grow-1">
+
+        <div class=" row">
+            <div class="col">
+                <div class="card">
+                    <div
+                        class="card-header sticky-element bg-label-primary d-flex justify-content-center align-items-center">
+                        <h5 class="card-title mb-0 text-primary">Hệ thống tra cứu sản phẩm</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <label class=" form-label">Nhập ID sản phẩm khác</label>
+                                        <div class=" input-group input-group-merge ">
+                                            <input name="productID" type="text" class="form-control">
+                                            <button class="btn btn-primary" type="button">Tra cứu</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <!-- 1.  -->
+                                <h5 class="mb-4">1. Thông tin sản phẩm</h5>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class=" form-label">Mã nhận dạng</label>
+                                        <input name="productCode" type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class=" form-label">Nhãn hiệu</label>
+                                        <input name="productBrand" type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class=" form-label">Tên mẫu</label>
+                                        <input name="productModel" type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class=" form-label">Phiên bản</label>
+                                        <input name="productVersion" type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class=" form-label">Ngày đăng ký</label>
+                                        <input name="productActiveDate" id="productActiveDate" type="text"
+                                            class=" form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class=" form-label">Năm sản xuất</label>
+                                        <input name="productYear" type="text" class="form-control">
+                                    </div>
+
+
+                                </div>
+                                <hr>
+                                <!-- 2.  -->
+                                <h5 class="my-4">2. Thông tin chủ sở hữu</h5>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class=" form-label">Số CCCD/CMND</label>
+                                        <input name="ownerID" type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class=" form-label">Họ và tên</label>
+                                        <input name="ownerName" type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class=" form-label">Ngày mua</label>
+                                        <input name="ownerBuyDate" id="ownerBuyDate" type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class=" form-label">Số điện thoại liên hệ</label>
+                                        <input name="ownerPhone" type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class=" form-label">địa chỉ liên hệ</label>
+                                        <input name="ownerAddress" type="text" class="form-control">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+
+                <div class=" card">
+                    <div class=" card-header">
+                        <h4 class="card-title text-primary fw-bold">Danh sách giao dịch</h4>
+                    </div>
+                    <div class=" card-body ">
+                        <div class="  table-responsive">
+                            <table id="table" class=" table dataTable ">
+                                <thead>
+                                    <tr>
+                                        <th>Ngày giao dịch</th>
+                                        <th>Tên giao dịch</th>
+                                        <th>Tên doanh nghiệp</th>
+                                        <th>Giao dịch viên</th>
+                                        <th>Số liên hệ</th>
+                                        <th>Địa chỉ</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% for (var i=0; i < transactions.length; i++) { %>
+                                        <tr>
+                                            <td>
+                                                <%= transactions[i].transactionDate %>
+                                            </td>
+                                            <td>
+                                                <%= transactions[i].transactionName %>
+                                            </td>
+                                            <td>
+                                                <%= transactions[i].businessName %>
+                                            </td>
+                                            <td>
+                                                <%= transactions[i].businessAgent %>
+                                            </td>
+                                            <td>
+                                                <%= transactions[i].businessPhone %>
+                                            </td>
+                                            <td>
+                                                <%= transactions[i].businessAddress %>
+                                            </td>
+                                            <td><a class=" badge bg-primary "
+                                                    href="/tra-cuu/giao-dich/<%= transactions[i]._id %>">chi
+                                                    tiết</a></td>
+                                        </tr>
+                                        <% } %>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    <!-- / Content -->
+
+
+
+
+
+
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="/static/assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="/static/assets/vendor/libs/popper/popper.js"></script>
+    <script src="/static/assets/vendor/js/bootstrap.js"></script>
+    <script src="/static/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="/static/assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="/static/assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="/static/assets/vendor/libs/typeahead-js/typeahead.js"></script>
+
+    <script src="/static/assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="/static/assets/vendor/libs/jquery-sticky/jquery-sticky.js"></script>
+
+    <script src="/static/assets/vendor/libs/animate-on-scroll/animate-on-scroll.js"></script>
+
+    <!-- Main JS -->
+    <script src="/static/assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="/static/assets/js/page-verify.js"></script>
+
+
+
+</body>
+
+
+</html>

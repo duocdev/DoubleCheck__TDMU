@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html lang="vi" class="light-style " dir="ltr" data-theme="theme-default" data-assets-path="/static/assets/"
+    data-template="vertical-menu-template">
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Đăng ký sản phẩm | DoubleCheck</title>
+
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon"
+        href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="/static/assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="/static/assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="/static/assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="/static/assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="/static/assets/vendor/css/rtl/theme-default.css"
+        class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="/static/assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="/static/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="/static/assets/vendor/libs/typeahead-js/typeahead.css" />
+
+    <link rel="stylesheet" href="/static/assets/vendor/libs/flatpickr/flatpickr.css" />
+
+    <link rel="stylesheet" href="/static/assets/vendor/libs/formvalidation/dist/css/formValidation.css" />
+
+    <link rel="stylesheet" href="/static/assets/vendor/libs/toastr/toastr.css" />
+
+    <!-- Page CSS -->
+
+
+
+    <!-- Helpers -->
+    <script src="/static/assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="/static/assets/vendor/js/template-customizer.js"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="/static/assets/js/config.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar  ">
+        <div class="layout-container">
+
+
+
+
+
+
+
+            <!-- Menu -->
+
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+
+
+                <div class="app-brand demo ">
+                    <a href="dashboard.html" class="app-brand-link">
+                        <span class="app-brand-logo demo">
+
+                            <i class=" bx bx-qr-scan bx-lg bx-tada "></i>
+
+                        </span>
+                        <span class="app-brand-text demo menu-text fw-bolder ms-2">DoubleCheck</span>
+                    </a>
+
+                    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
+                        <i class="bx bx-chevron-left bx-sm align-middle"></i>
+                    </a>
+                </div>
+
+                <div class="menu-inner-shadow"></div>
+
+
+
+                <ul class="menu-inner py-1">
+                    <!-- Dashboards -->
+                    <li class="menu-item ">
+                        <a href="/admin/dashboard" class="menu-link">
+                            <i class="menu-icon tf-icons bx bxs-dashboard"></i>
+                            <div>Bản điều khiển</div>
+                        </a>
+                    </li>
+
+
+                    <!-- Tính năng -->
+                    <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">Tính năng</span>
+                    </li>
+
+                    <!----->
+                    <li class="menu-item open active ">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-cube"></i>
+                            <div>Sản phẩm</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item active">
+                                <a href="/admin/product-registration" class="menu-link">
+                                    <div>Đăng ký sản phẩm mới</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/admin/product-list" class="menu-link">
+                                    <div>Danh sách sản phẩm</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!----->
+                    <li class="menu-item ">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-transfer"></i>
+                            <div>Giao dịch</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item ">
+                                <a href="/admin/transaction-create" class="menu-link">
+                                    <div>Tạo giao dịch mới</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/admin/transaction-list" class="menu-link">
+                                    <div>Danh sách giao dịch</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!----->
+
+
+                    <!-- Cài đặt -->
+                    <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">Cài đặt</span>
+                    </li>
+
+                    <!----->
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-user"></i>
+                            <div>Tài khoản</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="/admin/profile" class="menu-link">
+                                    <div>Hồ sơ</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/admin/change-password" class="menu-link">
+                                    <div>Đổi mật khẩu</div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+
+                </ul>
+
+
+
+            </aside>
+            <!-- / Menu -->
+
+
+
+            <!-- Layout container -->
+            <div class="layout-page">
+
+
+
+
+
+                <!-- Navbar -->
+
+
+
+
+                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+                    id="layout-navbar">
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0   d-xl-none ">
+                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                            <i class="bx bx-menu bx-sm"></i>
+                        </a>
+                    </div>
+
+
+                    <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+
+
+                        <!-- Search -->
+                        <div class="navbar-nav align-items-center">
+                            <div class="nav-item navbar-search-wrapper mb-0">
+                                <a class="nav-item nav-link search-toggler px-0" href="javascript:void(0);">
+                                    <i class="bx bx-search bx-sm"></i>
+                                    <span class="d-none d-md-inline-block text-muted">Search (Ctrl+/)</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- /Search -->
+
+
+
+
+
+                        <ul class="navbar-nav flex-row align-items-center ms-auto">
+
+
+
+
+
+
+                            <!-- Style Switcher -->
+                            <li class="nav-item me-2 me-xl-0">
+                                <a class="nav-link style-switcher-toggle hide-arrow" href="javascript:void(0);">
+                                    <i class='bx bx-sm'></i>
+                                </a>
+                            </li>
+                            <!--/ Style Switcher -->
+
+
+
+
+                            <!-- User -->
+                            <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);"
+                                    data-bs-toggle="dropdown">
+                                    <div class="avatar avatar-online">
+                                        <img src="/static/assets/img/avatars/1.png" alt
+                                            class="w-px-40 h-auto rounded-circle">
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="/admin/profile">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar avatar-online">
+                                                        <img src="/static/assets/img/avatars/1.png" alt
+                                                            class="w-px-40 h-auto rounded-circle">
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <span class="fw-semibold d-block">
+                                                        <%= account.name %>
+                                                    </span>
+                                                    <small class="text-muted">
+                                                        <%= account.role %>
+                                                    </small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="/admin/profile">
+                                            <i class="bx bx-user me-2"></i>
+                                            <span class="align-middle">Hồ sơ</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="/admin/change-password">
+                                            <i class="bx bx-cog me-2"></i>
+                                            <span class="align-middle">Đổi mật khẩu</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item" href="/admin/logout">
+                                            <i class="bx bx-power-off me-2"></i>
+                                            <span class="align-middle">Log Out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--/ User -->
+
+
+                        </ul>
+                    </div>
+
+
+                    <!-- Search Small Screens -->
+                    <div class="navbar-search-wrapper search-input-wrapper  d-none">
+                        <input type="text" class="form-control search-input container-xxl border-0"
+                            placeholder="Search..." aria-label="Search...">
+                        <i class="bx bx-x bx-sm search-toggler cursor-pointer"></i>
+                    </div>
+
+
+                </nav>
+
+
+
+                <!-- / Navbar -->
+
+
+
+                <!-- Content wrapper -->
+                <div class="content-wrapper">
+
+                    <!-- Content -->
+
+                    <div class="container-xxl flex-grow-1 container-p-y">
+
+                        <form id="needs-validation">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div
+                                            class="card-header sticky-element bg-label-secondary d-flex justify-content-between align-items-center">
+                                            <h5 class="card-title mb-0">Đăng ký sản phẩm</h5>
+                                            <div class="action-btns d-flex flex-wrap justify-content-end">
+                                               
+                                                <button type="submit" class="btn btn-primary">
+                                                    Xác nhận
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-8 mx-auto">
+                                                    <!-- 1.  -->
+                                                    <h5 class="mb-4">1. Thông tin sản phẩm</h5>
+                                                    <div class="row g-3">
+                                                        <div class="col-md-6">
+                                                            <label class=" form-label">Mã nhận dạng (serial
+                                                                number)</label>
+                                                            <input name="productCode" type="text" class="form-control">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label class=" form-label">Nhãn hiệu (brand)</label>
+                                                            <input name="productBrand" type="text" class="form-control">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label class=" form-label">Tên mẫu (model name)</label>
+                                                            <input name="productModel" type="text" class="form-control">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label class=" form-label">Phiên bản (version)</label>
+                                                            <input name="productVersion" type="text"
+                                                                class="form-control">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label class=" form-label">Ngày đăng ký</label>
+                                                            <input name="productActiveDate" id="productActiveDate"
+                                                                type="text" class=" form-control">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label class=" form-label">Năm sản xuất</label>
+                                                            <input name="productYear" type="text" class="form-control">
+                                                        </div>
+
+
+                                                    </div>
+                                                    <hr>
+                                                    <!-- 2.  -->
+                                                    <h5 class="my-4">2. Thông tin chủ sở hữu</h5>
+                                                    <div class="row g-3">
+                                                        <div class="col-md-6">
+                                                            <label class=" form-label">Số CCCD/CMND</label>
+                                                            <input name="ownerID" type="text" class="form-control">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label class=" form-label">Họ và tên</label>
+                                                            <input name="ownerName" type="text" class="form-control">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label class=" form-label">Ngày mua</label>
+                                                            <input name="ownerBuyDate" id="ownerBuyDate" type="text"
+                                                                class="form-control">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label class=" form-label">Số điện thoại liên hệ</label>
+                                                            <input name="ownerPhone" type="text" class="form-control">
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <label class=" form-label">địa chỉ liên hệ</label>
+                                                            <input name="ownerAddress" type="text" class="form-control">
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class=" divider">
+                                                        <div class=" divider-text">Bấm xác nhận phía trên góc phải</div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+
+
+
+                    </div>
+                    <!-- / Content -->
+
+
+
+
+                    <!-- Footer -->
+                    <footer class="content-footer footer bg-footer-theme">
+                        <div
+                            class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                            <div class="mb-2 mb-md-0">
+                                ©
+                                <script>
+                                    document.write(new Date().getFullYear())
+                                </script>
+                                , Powered By <a href="https://themeselection.com/" target="_blank"
+                                    class="footer-link fw-bolder">DoubleCheck</a>
+                            </div>
+
+                        </div>
+                    </footer>
+                    <!-- / Footer -->
+
+
+                    <div class="content-backdrop fade"></div>
+                </div>
+                <!-- Content wrapper -->
+            </div>
+            <!-- / Layout page -->
+        </div>
+
+
+
+        <!-- Overlay -->
+        <div class="layout-overlay layout-menu-toggle"></div>
+
+
+        <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+        <div class="drag-target"></div>
+
+    </div>
+    <!-- / Layout wrapper -->
+
+
+
+
+
+
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="/static/assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="/static/assets/vendor/libs/popper/popper.js"></script>
+    <script src="/static/assets/vendor/js/bootstrap.js"></script>
+    <script src="/static/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="/static/assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="/static/assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="/static/assets/vendor/libs/typeahead-js/typeahead.js"></script>
+
+    <script src="/static/assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="/static/assets/vendor/libs/jquery-sticky/jquery-sticky.js"></script>
+
+    <script src="/static/assets/vendor/libs/flatpickr/flatpickr.js"></script>
+    <script src="/static/assets/vendor/libs/flatpickr/vn.min.js"></script>
+
+    <script src="/static/assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
+    <script src="/static/assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
+    <!-- AutoFocus plugin, automatically focus on the first invalid input  -->
+    <script src="/static/assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
+
+    <script src="/static/assets/vendor/libs/toastr/toastr.js"></script>
+
+    <script src="/static/assets/vendor/libs/pdfmake/pdfmake.js"></script>
+
+    <!-- Main JS -->
+    <script src="/static/assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="/static/assets/js/page-product-registration.js"></script>
+
+
+
+</body>
+
+
+</html>
